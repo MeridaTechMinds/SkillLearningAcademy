@@ -247,7 +247,7 @@
                                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0 mt-2 mt-sm-0 gap-4">
                                       <li class="nav-item">
-                                        <a class="nav-link nav1-link" href="#">Home</a>
+                                        <a class="nav-link nav1-link" href="index.html">Home</a>
                                       </li>
                                       <li class="nav-item">
                                         <a class="nav-link nav1-link" href="#">About Us</a>
@@ -695,6 +695,15 @@ mobile application
     duration: 800,
       easing: 'ease-in-out'
   });
+</script>
+     <script>
+  let dropdowns = document.querySelectorAll('.dropdown-toggle')
+dropdowns.forEach((dd)=>{
+dd.addEventListener('click', function (e) {
+  var el = this.nextElementSibling
+  el.style.display = el.style.display==='block'?'none':'block'
+})
+})
 </script>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery.js"></script>
